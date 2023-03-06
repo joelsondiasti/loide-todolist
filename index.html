@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>To-Do List</title>
+  </head>
+
+  <!-- Ao digitar uma tarefa no campo de texto e clicar no botão 
+    CRIAR devemos adicionar uma tarefa na lista não ordenada -->
+
+  <body
+    class="flex flex-col items-center justify-center h-screen w-96 mx-auto bg-gray-800"
+  >
+    <div id="form" class="flex gap-4">
+      <input
+        id="campoDeTexto"
+        type="text"
+        class="border border-1 border-white rounded-md p-4 w-80"
+      />
+      <button
+        id="botaoCriar"
+        class="p-4 bg-green-500 text-white rounded-md cursor-pointer hover:bg-green-600"
+      >
+        Criar
+      </button>
+    </div>
+    <div class="w-full">
+      <!-- Unorderded List  - Lista não ordenada-->
+      <ul
+        id="tarefas"
+        class="p-4 border border-white mt-8 rounded-md text-white"
+      >
+        <!-- List Item - Item da Lista  -->
+        <li>Tarefa 1</li>
+        
+      </ul>
+    </div>
+  </body>
+  <!-- Adiciona um vinculo entre o arquivo HTML 
+    e o arquivo Javascript -->
+  <script src="function.js"></script>
+</html>
+
+<!--  -->
